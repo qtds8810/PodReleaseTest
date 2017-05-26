@@ -10,15 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - 公开/私有控件/属性
+    
+    // MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let p = DSPerson()
+        p.name = "小芳"
+        p.eat()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    // MARK: - Action
+    
+    // MARK: - Public Method
+    
 
 
 }
